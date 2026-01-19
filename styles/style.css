@@ -4,15 +4,13 @@
     font-style: normal;
 }
 
-
-
-
 body,
 html {
     margin: 0;
     padding: 0;
     height: 100%;
     box-sizing: border-box;
+    background-color:rgba(118, 221, 197, 0.698);
 }
 
 *,
@@ -20,3 +18,20 @@ html {
 *::after {
     box-sizing: inherit;
 }
+
+
+nav {
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     color: crimson;
+}
+
+
