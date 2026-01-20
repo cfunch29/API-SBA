@@ -3,7 +3,8 @@
     import { fetchRecipes } from "./api.js";
     import { renderRecipes } from "./DOM.js";
 
-    
+    // grab form and input from html 
+    const form = document.getElementById("searchForm")
 
 
 
