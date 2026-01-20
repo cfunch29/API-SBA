@@ -15,7 +15,7 @@ I used the search meal name to be able to pull up:
 * JavaScript
 * HTML
 * CSS
-* Bootstrap
+* Bootstrap 
 
 ### Acknowledgements/Citations
 ---
@@ -25,8 +25,8 @@ I used the search meal name to be able to pull up:
 ### Reflection
 ---
 
-`What could you have done differently during the planning stages of your project to make the execution easier?` I don't think the planning was terrible since I was just trying to replicate a site I've already done on a platform. I think with more practice the concepts will become easier. 
+`What could you have done differently during the planning stages of your project to make the execution easier?` I am having a difficult time with CSS and making the application visually appealing. I know we were supposed to focus on aesthetics and creativity but for the MVP I just wanted to make sure the code worked and I would build upon that in the future to make it more appealing to the user.  
 
-`Were there any requirements that were difficult to implement? What do you think would make them easier to implement in future projects?` I struggled the most with flexbox properties but I did use flexbox froggy to practice. It will become easier with more practice
+`Were there any requirements that were difficult to implement? What do you think would make them easier to implement in future projects?` Finding an API is a task in itself. I wanted to make sure it was easy to access and user friendly. I consulted with Dylan because it was giving me a little anxiety looking through all the open source APIs. Some require authorization, they need to have HTTPS, etc. I felt like I needed more time for that but I ultimately found a really good API. 
 
-`What would you add to or change about your website if given more time?`
+`What would you add to or change about your website if given more time?` I would add a feature to search meals by ingredients. This would allow the users to find recipes based on ingredients that have available in their kitchen. 
