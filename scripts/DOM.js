@@ -1,3 +1,18 @@
+// helper function to loop through for ingredients 
+function getIngredients(meal) {
+    const ingredients = [];
+
+    for (let i = 1; i <= 20; i++){
+        const ingredient = meal[`strIngredient${i}`];
+        const measure = meal[`strMeasure${i}`];
+
+        if (ingredient && ingredient.trim() !== ""){
+                ingredients.push(`${measure} ${ingredient}`);
+        }
+    }
+    return ingredients;
+}
+
 export function renderRecipes(meals){
     const resultsDiv = document.getElementById("results");
     // clear results section before showing new results

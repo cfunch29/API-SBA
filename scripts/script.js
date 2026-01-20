@@ -34,3 +34,4 @@ form.addEventListener("submit", async (e) => {
 
 console.log(fetchRecipes);
 console.log(renderRecipes);
+console.log(getIngredients); 
