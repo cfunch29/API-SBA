@@ -17,7 +17,7 @@ export function renderRecipes(meals){
         //bootstrap styling of card format for meal results with img and directions with ingredients
         card.innerHTML = 
         `<div class = "row g-0">
-        <div class = "col-md4">;
+        <div class = "col-md4">
         <img src="${meal.strMealThumb}" class="img-fluid rounded-start" alt="${meal.strMeal}">
         </div>
         </div>
