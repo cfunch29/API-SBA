@@ -2,7 +2,13 @@
 ## Recipe Finder Application 
 I enjoy cooking and wantd to create a streamlined recipe finder site like a Food Network Dupe!
 
-Really want to have the ability to create these sites myself from scratch since all the other platforms charge a premium to host and connect your domain. I enjoy making websites and really want to enhance my skill level.
+I used the search meal name to be able to pull up:
+---
+    - meal id
+    - meal name 
+    - instructions
+    - meal image 
+ * This allows me to build an interactive and informative application providing user interaction without unneccesary complexity 
 
 ### Technologies Used 
 ---

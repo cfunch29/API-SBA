@@ -26,6 +26,15 @@ nav {
     justify-content: center;
 }
 
+::placeholder {
+    color: blue;
+}
+.btn {
+    background-color: darkgray;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
 h1 {
     margin: 10%;
     display: flex;
