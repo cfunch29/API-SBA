@@ -14,11 +14,11 @@ export function renderRecipes(meals){
         card.className = "card mb-3";
         card.style.maxWidth = "540px";
 
-        //bootstrap styling of card format for meal results 
+        //bootstrap styling of card format for meal results with img and directions with ingredients
         card.innerHTML = 
         `<div class = "row g-0">
         <div class = "col-md4">;
-        <img src="${meals.strMealThumb}" class="img-fluid rounded-start" alt="${meal.strMeal}">
+        <img src="${meal.strMealThumb}" class="img-fluid rounded-start" alt="${meal.strMeal}">
         </div>
         </div>
         </div>`;

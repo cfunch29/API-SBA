@@ -1,6 +1,7 @@
-let apiURL = `www.themealdb.com/api/json/v1/1/search.php?s=${searchMeal}`;
 
 export async function fetchRecipes(searchMeal) {
+    let apiURL = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchMeal}`;
+
     try {
         // try searching by meal name 
         let response = await fetch(apiURL, {
