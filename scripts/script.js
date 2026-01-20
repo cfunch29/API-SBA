@@ -23,9 +23,9 @@ form.addEventListener("submit", async (e) => {
     const searchMeal = input.value.trim();
 
     // input validation 
-    if(!searchMeal) {
+    if (!searchMeal) {
         resultsDiv.textContent = "Please enter meal name!!!!";
-        return; 
+        return;
     }
 
     const meals = await fetchRecipes(searchMeal);

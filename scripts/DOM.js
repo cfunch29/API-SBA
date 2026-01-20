@@ -2,22 +2,22 @@
 function getIngredients(meal) {
     const ingredients = [];
 
-    for (let i = 1; i <= 20; i++){
+    for (let i = 1; i <= 20; i++) {
         const ingredient = meal[`strIngredient${i}`];
         const measure = meal[`strMeasure${i}`];
 
-        if (ingredient && ingredient.trim() !== ""){
-                ingredients.push(`${measure} ${ingredient}`);
+        if (ingredient && ingredient.trim() !== "") {
+            ingredients.push(`${measure} ${ingredient}`);
         }
     }
     return ingredients;
 }
 
-export function renderRecipes(meals){
+export function renderRecipes(meals) {
     const resultsDiv = document.getElementById("results");
     // clear results section before showing new results
     resultsDiv.innerHTML = "";
-    if (!meals || meals.length === 0){
+    if (!meals || meals.length === 0) {
         resultsDiv.textContent = "No recipes found.";
         return;
     }
@@ -30,8 +30,8 @@ export function renderRecipes(meals){
         card.style.maxWidth = "540px";
 
         //bootstrap styling of card format for meal results with img and directions with ingredients
-        card.innerHTML = 
-        `<div class = "row g-0">
+        card.innerHTML =
+            `<div class = "row g-0">
         <div class = "col-md-4">
         <img src="${meal.strMealThumb}" class="img-fluid rounded-start" alt="${meal.strMeal}">
         </div>
@@ -42,7 +42,14 @@ export function renderRecipes(meals){
         <strong>Category:</strong> ${meal.strCategory}<br>
         <strong>Area:</strong> ${meal.strArea}
         </p>
-
+            <h6>Ingredients</h6>
+            <ul>
+            ${getIngredients(meal)
+                .map(item => `<li>${item}</li>`)
+                .join("")
+            }
+            </ul>
+            
         <h6>Instructions</h6>
         <p class ="card-text">
         ${meal.strInstructions}

@@ -9,23 +9,23 @@ export async function fetchRecipes(searchMeal) {
         });
 
         if (response.status < 200 || response.status >= 300) {
-            throw new Error (`HTTP Error Status: ${response.status}`);
+            throw new Error(`HTTP Error Status: ${response.status}`);
         }
-           // if meals are found by name, return meal
+        // if meals are found by name, return meal
         let data = await response.json();
 
-            if (data.meals){
-                return data.meals;
-            }
- 
+        if (data.meals) {
+            return data.meals;
         }
+
+    }
 
     catch (err) {
         console.error("Error fetching recipes", err);
-            return [];
+        return [];
     }
 };
 
-        
+
 
 
